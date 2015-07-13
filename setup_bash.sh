@@ -52,7 +52,7 @@ echo au filetype python set expandtab >> ~/.vimrc
 echo syntax enable >> ~/.vimrc
 echo set foldmethod=indent >> ~/.vimrc
 echo  >> ~/.vimrc
-echo "call pathogen#infect('#bundle/{}')" >> ~/.vimrc
+echo "call pathogen#infect()" >> ~/.vimrc
 echo 'call pathogen#helptags()' >> ~/.vimrc
 echo  >> ~/.vimrc
 echo 'set list listchars=tab:\\|_,trail:·' >> ~/.vimrc
