@@ -31,8 +31,11 @@
 #  https://security.stackexchange.com/questions/22711
 -A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
 
-# Allow Flask
--A INPUT -p tcp --dport 5000 -j ACCEPT
+## Allow Flask
+#-A INPUT -p tcp --dport 5000 -j ACCEPT
+
+# Allow postgresql
+-A INPUT -p tcp --dport 5432 -j ACCEPT
 
 # log iptables denied calls (access via 'dmesg' command)
 -A INPUT -m limit --limit 5/min -j LOG --log-prefix "iptables denied: " --log-level 7
