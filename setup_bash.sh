@@ -10,7 +10,10 @@ echo export PS1='"[\t][\u@\W]:"' >> ~/.bashrc
 source ~/.bashrc
 
 # SETUP PSQL
-echo \set PROMPT1 '[%`date +%H:%M:%S`][%/@%m]:#' >> ~/.psqlrc
+echo \set PROMPT1 \'[%`date +%H:%M:%S`][%/@%m]:#\' >> ~/.psqlrc
+echo \pset null \'[null]\' >> ~/.psqlrc
+echo \pset format wrapped >> ~/.psqlrc
+echo \pset border 2 >> ~/.psqlrc
 
 # SETUP VIM
 rm -rf ~/.vim_old
