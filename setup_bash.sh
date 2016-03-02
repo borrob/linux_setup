@@ -51,6 +51,9 @@ echo set smartindent >> ~/.vimrc
 echo set tabstop=4 >> ~/.vimrc
 echo set shiftwidth=4 >> ~/.vimrc
 echo set scrolloff=100 >> ~/.vimrc
+echo set wrap >> ~/.vimrc
+echo set linebreak >> ~/.vimrc
+echo let &showbreak = '>>> ' >> ~/.vimrc
 echo au filetype python set expandtab >> ~/.vimrc
 echo syntax enable >> ~/.vimrc
 echo set foldmethod=indent >> ~/.vimrc
