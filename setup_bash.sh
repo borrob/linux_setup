@@ -67,3 +67,4 @@ echo highlight FourSpaces ctermbg=lightgray ctermfg=white guibg=#592929 >> ~/.vi
 echo match OverLength /\\%81v./ >> ~/.vimrc
 echo 2match FourSpaces \"\ \ \ \ \" >> ~/.vimrc
 echo set hlsearch >> ~/.vimrc
+echo "let @d=':vs^M:set scb^M2^Ww^F:set scb^M1^Ww'" >> ~/.vimrc
