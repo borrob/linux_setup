@@ -5,6 +5,8 @@ echo '' >> ~/.bashrc
 echo "# ROB FAV SETTINGS" >> ~/.bashrc
 echo alias dir=\'ls -lFGh\' >> ~/.bashrc
 echo alias rm=\'rm -i\' >> ~/.bashrc
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 echo export PS1='"[\t][\u@\W]:"' >> ~/.bashrc
 
 source ~/.bashrc
