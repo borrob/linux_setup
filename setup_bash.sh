@@ -13,9 +13,12 @@ source ~/.bashrc
 
 # SETUP PSQL
 echo \\set PROMPT1 \'[%\`date +%H:%M:%S\`][%/@%m]:#\' >> ~/.psqlrc
+echo \\set ON_ERROR_ROLLBACK interactive >> ~/.psqlrc
+echo \\setenv PAGER less >> ~/.psqlrc
 echo \\pset null \'[null]\' >> ~/.psqlrc
 echo \\pset format wrapped >> ~/.psqlrc
 echo \\pset border 2 >> ~/.psqlrc
+echo \\timing >> ~/.psqlrc
 
 # SETUP VIM
 rm -rf ~/.vim_old
